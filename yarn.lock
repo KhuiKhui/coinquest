@@ -2058,7 +2058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:8.4.6":
+"@storybook/addon-essentials@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/addon-essentials@npm:8.4.6"
   dependencies:
@@ -2089,7 +2089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-interactions@npm:8.4.6":
+"@storybook/addon-interactions@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/addon-interactions@npm:8.4.6"
   dependencies:
@@ -2116,7 +2116,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-onboarding@npm:8.4.6":
+"@storybook/addon-onboarding@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/addon-onboarding@npm:8.4.6"
   dependencies:
@@ -2136,6 +2136,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.4.6
   checksum: 10c0/62600a9f4164a8d91118d37cd7be4f4dd871e849a156ba7728f463bc2cfc5a8a233df09055dd5e5733a042fde7a63b08616cb3c61b26c363c1e2d4ce20d92584
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-themes@npm:8.4.6":
+  version: 8.4.6
+  resolution: "@storybook/addon-themes@npm:8.4.6"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.4.6
+  checksum: 10c0/a20d84f1b8b72935b24a16dd1d859554398f4b391974ef04815e70c644901ff98910b8ed6d7415f939223853e4dfee61f466e7c3041c409195fd97f3176992c1
   languageName: node
   linkType: hard
 
@@ -2159,7 +2170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.4.6":
+"@storybook/blocks@npm:8.4.6, @storybook/blocks@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/blocks@npm:8.4.6"
   dependencies:
@@ -2320,7 +2331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/nextjs@npm:8.4.6":
+"@storybook/nextjs@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/nextjs@npm:8.4.6"
   dependencies:
@@ -2446,7 +2457,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.4.6":
+"@storybook/react@npm:8.4.6, @storybook/react@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/react@npm:8.4.6"
   dependencies:
@@ -2471,7 +2482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.4.6":
+"@storybook/test@npm:8.4.6, @storybook/test@npm:^8.4.6":
   version: 8.4.6
   resolution: "@storybook/test@npm:8.4.6"
   dependencies:
@@ -4179,13 +4190,14 @@ __metadata:
   resolution: "coinquest@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:3.2.2"
-    "@storybook/addon-essentials": "npm:8.4.6"
-    "@storybook/addon-interactions": "npm:8.4.6"
-    "@storybook/addon-onboarding": "npm:8.4.6"
-    "@storybook/blocks": "npm:8.4.6"
-    "@storybook/nextjs": "npm:8.4.6"
-    "@storybook/react": "npm:8.4.6"
-    "@storybook/test": "npm:8.4.6"
+    "@storybook/addon-essentials": "npm:^8.4.6"
+    "@storybook/addon-interactions": "npm:^8.4.6"
+    "@storybook/addon-onboarding": "npm:^8.4.6"
+    "@storybook/addon-themes": "npm:8.4.6"
+    "@storybook/blocks": "npm:^8.4.6"
+    "@storybook/nextjs": "npm:^8.4.6"
+    "@storybook/react": "npm:^8.4.6"
+    "@storybook/test": "npm:^8.4.6"
     "@svgr/webpack": "npm:^8.1.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
@@ -4200,7 +4212,7 @@ __metadata:
     random-js: "npm:^2.1.0"
     react: "npm:19.0.0-rc-66855b96-20241106"
     react-dom: "npm:19.0.0-rc-66855b96-20241106"
-    storybook: "npm:8.4.6"
+    storybook: "npm:^8.4.6"
     tailwind-merge: "npm:^2.5.5"
     tailwindcss: "npm:^3.4.1"
     title: "npm:^4.0.1"
@@ -9224,7 +9236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:8.4.6":
+"storybook@npm:^8.4.6":
   version: 8.4.6
   resolution: "storybook@npm:8.4.6"
   dependencies:
