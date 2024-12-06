@@ -6,7 +6,8 @@ import Input from './Input';
 const meta: Meta<typeof Input> = {
   component: Input,
   args: {
-    content: "Placeholder"
+    placeholder: "Enter your question...",
+    className: ""
   }
 };
 

@@ -1,12 +1,13 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends HTMLDivElement {
   content: string;
 }
 
-function Button({ content }: ButtonProps) {
+function Button({ content, className }: ButtonProps) {
   return (
-    <div className="p-2 bg-white border border-beige w-fit h-fit rounded-md hover:bg-dust-white transition-all cursor-pointer">{content}</div>
+    <div className={twMerge(className, "p-2 bg-white border border-beige w-fit h-fit rounded-md hover:bg-dust-white transition-all cursor-pointer")}>{content}</div>
   );
 }
 
