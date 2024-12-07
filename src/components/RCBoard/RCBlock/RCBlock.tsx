@@ -9,7 +9,7 @@ interface RCBlockProps extends HTMLAttributes<HTMLDivElement>{
 
 function RCBlock({content, question, className}:RCBlockProps) {
   return (
-    <Button content={content} className={twMerge(className, "")}></Button>
+    <Button content={content} className={twMerge("", className)}></Button>
   )
 }
 

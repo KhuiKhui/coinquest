@@ -8,7 +8,7 @@ interface RCBoardProps extends HTMLAttributes<HTMLDivElement>{
 
 function RCBoard({length, className}:RCBoardProps) {
   return (
-    <div className={twMerge(className, 'h-fit w-full flex-row flex space-x-3')}>
+    <div className={twMerge('h-fit w-full flex-row flex flex-wrap justify-center gap-3', className)}>
         {Array.from(Array(length).keys()).map((index) => <RCBlock key={index} content='Welcome' question='Introduce yourself'></RCBlock>)}
     </div>
   )
