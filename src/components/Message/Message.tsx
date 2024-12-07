@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-interface MessageProps extends HTMLDivElement {
+interface MessageProps extends HTMLAttributes<HTMLDivElement> {
     content: string,
 }
 
