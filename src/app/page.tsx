@@ -8,16 +8,16 @@ import Button from "@/components/Controls/Button";
 
 export default function Home() {
   return (
-  <div className="p-5 flex justify-center items-center flex-col gap-y-16">
+  <div className="flex flex-col items-center justify-center gap-y-16 p-5">
     <div className="grid gap-10">
       <Message content={metaMessage!.args!.content!}></Message> 
 
       <Message content={metaMessage!.args!.content!} className="justify-self-end"></Message> 
     </div>
-    <div className="flex flex-col justify-center items-center gap-y-5 max-w-[90%] md:max-w-[70%]">
-      <div className="size-full flex flex-row gap-3 items-center">
+    <div className="flex max-w-[90%] flex-col items-center justify-center gap-y-5 md:max-w-[70%]">
+      <div className="flex size-full flex-row items-center gap-3">
         <Input placeholder={metaChatbox!.args!.placeholder!}></Input>
-        <Button content="Enter" className="bg-green-200 hover:bg-green-300 w-40 text-center border-2"></Button>
+        <Button content="Enter" className="w-40 border-2 bg-green-200 text-center hover:bg-green-300"></Button>
       </div>
       <RCBoard length={15}></RCBoard>
     </div>

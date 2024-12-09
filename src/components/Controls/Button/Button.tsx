@@ -7,7 +7,14 @@ interface ButtonProps extends HTMLAttributes<HTMLDivElement> {
 
 function Button({ content, className }: ButtonProps) {
   return (
-    <div className={twMerge("p-2 bg-white border border-beige w-fit h-fit rounded-md hover:bg-dust-white transition-all cursor-pointer", className)}>{content}</div>
+    <div
+      className={twMerge(
+        "p-2 bg-white border border-beige w-fit rounded-md h-fit hover:bg-dust-white transition-all cursor-pointer",
+        className,
+      )}
+    >
+      {content}
+    </div>
   );
 }
 
