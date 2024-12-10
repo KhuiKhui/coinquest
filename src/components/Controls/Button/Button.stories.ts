@@ -5,9 +5,9 @@ import Button from './Button';
 const meta: Meta<typeof Button> = {
   component: Button,
   args: {
-    content: "Placeholder",
-    className: ""
-  }
+    content: 'Placeholder',
+    className: '',
+  },
 };
 
 export default meta;

@@ -1,3 +1,3 @@
-import RCBoard from "./RCBoard";
+import RCBoard from './RCBoard';
 
-export default RCBoard
+export default RCBoard;

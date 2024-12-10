@@ -1,3 +1,3 @@
-import RCBlock from "./RCBlock";
+import RCBlock from './RCBlock';
 
-export default RCBlock
+export default RCBlock;
