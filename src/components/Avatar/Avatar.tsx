@@ -8,7 +8,7 @@ interface AvatarProps {
 function Avatar({ image }: AvatarProps) {
   return (
     <Image
-      className="m-5 size-10 rounded-full"
+      className="m-5 size-10 rounded-full border border-black"
       width={5}
       height={5}
       alt="finbot"
