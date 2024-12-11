@@ -1,4 +1,3 @@
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Avatar from './Avatar';
@@ -6,8 +5,7 @@ import Avatar from './Avatar';
 const meta: Meta<typeof Avatar> = {
   component: Avatar,
   args: {
-    content: 'Placeholder',
-    className: '',
+    image: 'https://picsum.photos/200',
   },
 };
 
