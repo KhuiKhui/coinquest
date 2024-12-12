@@ -1,21 +1,25 @@
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
+import { ChatMessageType } from '@/types/chat-message';
+
 import ChatMessage from './ChatMessage';
 
 interface ChatProps extends HTMLAttributes<HTMLDivElement> {
-  avatar: string;
-  content: string;
+  conversation: ChatMessageType[];
 }
 
-function Chat({ avatar, content, className }: ChatProps) {
+function Chat({ conversation, className }: ChatProps) {
   return (
-    <div>
-      <ChatMessage
-        avatar={avatar}
-        content={content}
-        className={className}
-      ></ChatMessage>
+    <div className={twMerge('flex h-fit flex-col justify-center', className)}>
+      {conversation.map((message: ChatMessageType, index: number) => (
+        <ChatMessage
+          key={index}
+          avatar={message.avatar}
+          msgContent={message.msgContent}
+          role={message.role}
+        />
+      ))}
     </div>
   );
 }

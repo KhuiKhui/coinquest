@@ -4,8 +4,18 @@ import Chat from '.';
 const meta: Meta<typeof Chat> = {
   component: Chat,
   args: {
-    avatar: 'https://picsum.photos/200',
-    content: 'bla bla bla bla bla',
+    conversation: [
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla bla',
+        role: 'FINBOT',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla bla',
+        role: 'USER',
+      },
+    ],
   },
 };
 

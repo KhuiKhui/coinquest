@@ -1,19 +1,42 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import Avatar from '@/components/Avatar';
 import Message from '@/components/Message';
-
-interface ChatMessageProps extends HTMLAttributes<HTMLDivElement> {
-  avatar: string;
-  content: string;
+import { ChatMessageType } from '@/types/chat-message';
+interface ChatMessageProps extends ChatMessageType {
+  className?: string;
 }
-function ChatMessage({ avatar, content, className }: ChatMessageProps) {
+function ChatMessage({
+  avatar,
+  msgContent,
+  role,
+  className = '',
+}: ChatMessageProps) {
   return (
-    <div className={twMerge('flex size-fit flex-row items-center', className)}>
-      <Avatar image={avatar}></Avatar>
-      <Message content={content}></Message>
-    </div>
+    <>
+      {role === 'FINBOT' ? (
+        <div
+          className={twMerge(
+            'flex w-full flex-row items-center justify-start',
+            className,
+          )}
+        >
+          <Avatar image={avatar}></Avatar>
+          <Message content={msgContent}></Message>
+        </div>
+      ) : (
+        <div
+          className={twMerge(
+            'flex w-full flex-row items-center justify-end',
+            className,
+          )}
+        >
+          <Message content={msgContent}></Message>
+          <Avatar image={avatar}></Avatar>
+        </div>
+      )}
+    </>
   );
 }
 
