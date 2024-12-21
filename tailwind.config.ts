@@ -1,32 +1,37 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const colors = {
   black: {
-    50: "#2D2E2E",
-    100: "#0F0F0F",
-    200: "#000000",
-    DEFAULT: "#000000",
+    50: '#2D2E2E',
+    100: '#0F0F0F',
+    200: '#000000',
+    DEFAULT: '#000000',
   },
-  white: "#FFFFFF",
-  "dust-white": "#FBFBFB",
+  white: '#FFFFFF',
+  'dust-white': '#FBFBFB',
   beige: {
-    50: "#BCABAE",
-    100: "#716929",
-    DEFAULT: "#BCABAE",
+    50: '#BCABAE',
+    100: '#716929',
+    DEFAULT: '#BCABAE',
   },
+};
+
+const gridTemplateRows = {
+  layout: '500px 200px',
 };
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors,
+      gridTemplateRows,
     },
   },
   plugins: [],
-  darkMode: ["class", '[data-mode="dark"]'],
+  darkMode: ['class', '[data-mode="dark"]'],
 } satisfies Config;

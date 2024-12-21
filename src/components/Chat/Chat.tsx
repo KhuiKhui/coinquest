@@ -11,7 +11,12 @@ interface ChatProps extends HTMLAttributes<HTMLDivElement> {
 
 function Chat({ conversation, className }: ChatProps) {
   return (
-    <div className={twMerge('flex h-fit flex-col justify-center', className)}>
+    <div
+      className={twMerge(
+        'flex size-full flex-col items-center justify-start overflow-y-scroll',
+        className,
+      )}
+    >
       {conversation.map((message: ChatMessageType, index: number) => (
         <ChatMessage
           key={index}

@@ -12,8 +12,38 @@ const meta: Meta<typeof Chat> = {
       },
       {
         avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla bla',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
         role: 'USER',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'USER',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'FINBOT',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'FINBOT',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'USER',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'FINBOT',
+      },
+      {
+        avatar: 'https://picsum.photos/200',
+        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        role: 'FINBOT',
       },
     ],
   },
