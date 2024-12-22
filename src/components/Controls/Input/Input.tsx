@@ -2,8 +2,9 @@ import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 interface InputProps extends HTMLAttributes<HTMLDivElement> {
   placeholder: string;
+  onChange: (e: any) => void;
 }
-function Input({ placeholder, className }: InputProps) {
+function Input({ placeholder, onChange, className }: InputProps) {
   return (
     <div
       className={twMerge(
@@ -12,8 +13,10 @@ function Input({ placeholder, className }: InputProps) {
       )}
     >
       <input
+        onChange={onChange}
+        type='text'
         placeholder={placeholder}
-        className="size-full outline-none"
+        className='size-full outline-none'
       ></input>
     </div>
   );

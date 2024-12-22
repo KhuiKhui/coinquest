@@ -18,6 +18,7 @@ export default [
         'warn',
         {
           singleQuote: true,
+          jsxSingleQuote: true,
           semi: true,
           trailingComma: 'all',
         },

@@ -4725,6 +4725,7 @@ __metadata:
     eslint-plugin-storybook: "npm:^0.11.1"
     eslint-plugin-tailwindcss: "npm:^3.17.5"
     globals: "npm:^15.13.0"
+    jotai: "npm:^2.10.4"
     lorem-ipsum: "npm:^2.0.8"
     next: "npm:15.0.3"
     postcss: "npm:^8"
@@ -7554,6 +7555,21 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: 10c0/05b9ed58cd30d0c3ccd3c98209339e74f50abd9a17e716f65db46b6a35812103f6bde6e134be7124d01745586bca8cc5dae1d0d952267c3ebe55171949c32e56
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^2.10.4":
+  version: 2.10.4
+  resolution: "jotai@npm:2.10.4"
+  peerDependencies:
+    "@types/react": ">=17.0.0"
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/83dc754e0db3159877c035f1f5dbc8507ecf46ed9edac7d055ecd9cca4996035737233b9114d196fc9d5d58be79e9706c1bff6068ec5ed549bd91697a37660ad
   languageName: node
   linkType: hard
 
