@@ -1,10 +1,11 @@
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
-interface InputProps extends HTMLAttributes<HTMLDivElement> {
+interface InputProps extends HTMLAttributes<HTMLInputElement> {
   placeholder: string;
+  value: string;
   onChange: (e: any) => void;
 }
-function Input({ placeholder, onChange, className }: InputProps) {
+function Input({ placeholder, value, onChange, className }: InputProps) {
   return (
     <div
       className={twMerge(
@@ -13,6 +14,7 @@ function Input({ placeholder, onChange, className }: InputProps) {
       )}
     >
       <input
+        value={value}
         onChange={onChange}
         type='text'
         placeholder={placeholder}
