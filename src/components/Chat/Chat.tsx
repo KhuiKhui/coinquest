@@ -9,11 +9,12 @@ interface ChatProps extends HTMLAttributes<HTMLDivElement> {
   conversation: ChatMessageType[];
 }
 
-function Chat({ conversation, className }: ChatProps) {
+function Chat({ conversation, id, className }: ChatProps) {
   return (
     <div
+      id={id}
       className={twMerge(
-        'flex size-full flex-col items-center justify-start overflow-y-scroll',
+        'flex size-full flex-col items-center justify-start gap-y-7 overflow-y-scroll',
         className,
       )}
     >

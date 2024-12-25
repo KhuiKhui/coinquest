@@ -13,16 +13,15 @@ import RCBoard from '../RCBoard';
 function InputPanel() {
   const [msg, setMsg] = useAtom(msgAtom);
   const [convo, setConvo] = useAtom(convoAtom);
-
   async function handleClick() {
     if (msg === '') {
       return;
     }
-    const res: string = await getResponse(msg);
-    const newMsg = [
+    const res: string | null = await getResponse(msg);
+    const newMsg: ChatMessageType[] = [
       ...convo,
       createTempMsg('USER', msg),
-      createTempMsg('FINBOT', res),
+      createTempMsg('FINBOT', res!),
     ];
     setConvo(newMsg);
     setMsg('');

@@ -8,27 +8,17 @@ export default async function getResponse(msg: string) {
     model: 'gpt-4o-mini',
     messages: [
       {
+        role: 'developer',
+        content:
+          'You are an esteemed finance advisor, precise and direct with advice. You answer in less than 100 words,' +
+          'and only in plain text, not Markdown. Regarding questions not related to finance or business or economics, ' +
+          'only answer in less than 10 words, if not possible then decline the question.',
+      },
+      {
         role: 'user',
         content: msg,
       },
     ],
-    // response_format: {
-    //   // See /docs/guides/structured-outputs
-    //   type: 'json_schema',
-    //   json_schema: {
-    //     name: 'answer',
-    //     schema: {
-    //       type: 'object',
-    //       properties: {
-    //         result: {
-    //           description: 'The answer of the question',
-    //           type: 'string',
-    //         },
-    //       },
-    //       additionalProperties: false,
-    //     },
-    //   },
-    // },
   });
   return completion.choices[0].message.content;
 }

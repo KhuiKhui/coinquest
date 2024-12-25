@@ -18,7 +18,7 @@ function ChatMessage({
       {role === 'FINBOT' ? (
         <div
           className={twMerge(
-            'flex w-full flex-row items-center justify-start',
+            'flex w-full flex-row items-start justify-start',
             className,
           )}
         >
@@ -28,7 +28,7 @@ function ChatMessage({
       ) : (
         <div
           className={twMerge(
-            'flex w-full flex-row items-center justify-end',
+            'flex w-full flex-row items-start justify-end',
             className,
           )}
         >

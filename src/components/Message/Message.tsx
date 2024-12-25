@@ -7,12 +7,7 @@ interface MessageProps extends HTMLAttributes<HTMLDivElement> {
 
 function Message({ content, className }: MessageProps) {
   return (
-    <div
-      className={twMerge(
-        'h-fit max-w-[85%] text-ellipsis text-wrap rounded-lg border border-black bg-slate-200 px-10 py-3 text-black md:max-w-[70%] md:rounded-full',
-        className,
-      )}
-    >
+    <div className={twMerge('h-fit max-w-[85%] md:max-w-[60%]', className)}>
       {content}
     </div>
   );
