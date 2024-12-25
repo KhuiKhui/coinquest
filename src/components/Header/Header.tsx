@@ -12,8 +12,8 @@ function Header({ className }: HeaderProps) {
         className,
       )}
     >
-      <Tab content="FinBot"></Tab>
-      <Tab content="FinLang"></Tab>
+      <Tab content='FinBot'></Tab>
+      <Tab content='FinLang'></Tab>
     </div>
   );
 }
