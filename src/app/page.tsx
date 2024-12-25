@@ -16,7 +16,7 @@ export default function Home() {
     focusScroll();
   }, [convo]);
   return (
-    <div className='flex flex-col items-center justify-center gap-y-5 py-5'>
+    <div className='flex h-full flex-col items-center justify-between gap-y-5 py-5'>
       <Chat id='chat' conversation={convo}></Chat>
       <InputPanel />
     </div>

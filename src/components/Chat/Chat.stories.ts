@@ -7,67 +7,8 @@ const meta: Meta<typeof Chat> = {
     conversation: [
       {
         avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'USER',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'USER',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'USER',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'USER',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
-        role: 'FINBOT',
-      },
-      {
-        avatar: 'https://picsum.photos/200',
-        msgContent: 'bla bla blaaaaaaaaaaaa bla',
+        msgContent:
+          'My name is FinBot. I am here to help you with your financial queries.',
         role: 'FINBOT',
       },
     ],

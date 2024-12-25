@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} grid max-h-screen grid-rows-layout antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} grid h-screen grid-rows-layout antialiased`}
       >
         <Header></Header>
         {children}
