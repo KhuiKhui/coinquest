@@ -16,7 +16,7 @@ export default function Home() {
     focusScroll();
   }, [convo]);
   return (
-    <div className='grid max-h-screen grid-rows-2 justify-items-center'>
+    <div className='flex h-fit grow flex-col items-center justify-center'>
       <Chat id='chat' conversation={convo}></Chat>
       <InputPanel />
     </div>
