@@ -9,7 +9,7 @@ function Tab({ content, className }: TabProps) {
   return (
     <button
       className={twMerge(
-        'size-full bg-white py-1 text-center font-bold transition-all hover:bg-dust-white',
+        'size-full bg-white py-1 text-center font-bold transition-all hover:bg-slate-200',
         className,
       )}
     >

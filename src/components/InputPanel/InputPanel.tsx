@@ -2,6 +2,7 @@
 import { useAtom } from 'jotai';
 import React from 'react';
 
+import metaSuggestions from '@/components/RCBoard/RCBoard.stories';
 import { ChatMessageType } from '@/types/chat-message';
 import getResponse from '@/utils/api';
 import { convoAtom, msgAtom } from '@/utils/atoms';
@@ -28,7 +29,7 @@ function InputPanel() {
   }
 
   return (
-    <div className='flex max-w-[90%] flex-col justify-center gap-y-5 md:max-w-[70%]'>
+    <div className='flex w-1/2 flex-col justify-center gap-y-5 md:max-w-[70%]'>
       <div className='flex h-fit w-full flex-row items-center gap-3'>
         <Input
           value={msg}
@@ -42,7 +43,7 @@ function InputPanel() {
           className='w-40 border-2 bg-green-200 text-center hover:bg-green-300'
         ></Button>
       </div>
-      <RCBoard length={15}></RCBoard>
+      <RCBoard suggestions={metaSuggestions!.args!.suggestions!}></RCBoard>
     </div>
   );
 }

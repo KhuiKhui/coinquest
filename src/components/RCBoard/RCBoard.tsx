@@ -1,13 +1,15 @@
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
+import { SuggestionType } from '@/types/suggestion';
+
 import RCBlock from './RCBlock';
 
 interface RCBoardProps extends HTMLAttributes<HTMLDivElement> {
-  length: number;
+  suggestions: SuggestionType[];
 }
 
-function RCBoard({ length, className }: RCBoardProps) {
+function RCBoard({ suggestions, className }: RCBoardProps) {
   return (
     <div
       className={twMerge(
@@ -15,11 +17,11 @@ function RCBoard({ length, className }: RCBoardProps) {
         className,
       )}
     >
-      {Array.from(Array(length > 7 ? 7 : length).keys()).map((index) => (
+      {suggestions.map((suggestion) => (
         <RCBlock
-          key={index}
-          content='Welcome'
-          question='Introduce yourself'
+          key={suggestion.content}
+          content={suggestion.content}
+          question={suggestion.question}
         ></RCBlock>
       ))}
     </div>
