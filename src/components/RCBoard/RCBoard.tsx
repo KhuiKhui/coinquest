@@ -15,7 +15,7 @@ function RCBoard({ length, className }: RCBoardProps) {
         className,
       )}
     >
-      {Array.from(Array(length > 14 ? 14 : length).keys()).map((index) => (
+      {Array.from(Array(length > 7 ? 7 : length).keys()).map((index) => (
         <RCBlock
           key={index}
           content='Welcome'

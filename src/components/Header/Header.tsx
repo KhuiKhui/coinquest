@@ -8,7 +8,7 @@ function Header({ className }: HeaderProps) {
   return (
     <div
       className={twMerge(
-        'flex h-fit w-full flex-row divide-x divide-dashed divide-black border-b-2 border-black',
+        'flex size-full flex-row divide-x divide-dashed divide-black border-b-2 border-black',
         className,
       )}
     >

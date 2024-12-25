@@ -17,7 +17,7 @@ const colors = {
 };
 
 const gridTemplateRows = {
-  layout: '500px 200px',
+  layout: '10% minmax(0, 1fr)',
 };
 
 export default {
