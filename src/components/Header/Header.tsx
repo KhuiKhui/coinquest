@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type */
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import Tab from './Tab';
 
-interface HeaderProps extends HTMLAttributes<HTMLDivElement> {}
-function Header({ className }: HeaderProps) {
+function Header({ className }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       className={twMerge(

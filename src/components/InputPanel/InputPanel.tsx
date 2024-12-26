@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import { useAtom } from 'jotai';
 import React from 'react';
@@ -34,7 +33,9 @@ function InputPanel() {
       <div className='flex h-fit w-full flex-row items-center gap-3'>
         <Input
           value={msg}
-          onChange={(e: any) => setMsg(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setMsg(e.target.value)
+          }
           placeholder='What do you want to ask?'
         ></Input>
         <Button
