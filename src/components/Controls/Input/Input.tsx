@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 interface InputProps extends HTMLAttributes<HTMLInputElement> {

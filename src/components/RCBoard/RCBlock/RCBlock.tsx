@@ -1,4 +1,4 @@
-import { useAtom, useSetAtom } from 'jotai';
+import { useSetAtom } from 'jotai';
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 

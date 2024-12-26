@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 import React, { HTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
