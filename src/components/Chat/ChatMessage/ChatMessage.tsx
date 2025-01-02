@@ -22,7 +22,7 @@ function ChatMessage({
             className,
           )}
         >
-          <Avatar image={avatar}></Avatar>
+          <Avatar image='/finbot.png'></Avatar>
           <Message content={msgContent}></Message>
         </div>
       ) : (

@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^15.0.4",
-    "@svgr/webpack": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -41,6 +40,7 @@
     "@storybook/nextjs": "^8.4.6",
     "@storybook/react": "^8.4.6",
     "@storybook/test": "^8.4.6",
+    "@svgr/webpack": "^8.1.0",
     "@types/eslint-plugin-tailwindcss": "^3",
     "@types/node": "^20",
     "@types/react": "^18",
